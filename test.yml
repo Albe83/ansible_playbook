@@ -6,3 +6,6 @@
         url: https://api.ipify.org?format=json
         return_content: yes
       register: _ipify
+      
+    - debug:
+        var: _ipify.content 
