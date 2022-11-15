@@ -5,3 +5,4 @@
       ansible.builtin.uri:
         url: https://api.ipify.org?format=json
         return_content: yes
+      register: _ipify
