@@ -4,3 +4,4 @@
     - name: What is my IP?
       ansible.builtin.uri:
         url: https://api.ipify.org?format=json
+        return_content: yes
