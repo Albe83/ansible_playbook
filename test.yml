@@ -1,0 +1,6 @@
+- name: Test Playbook
+  hosts: all
+  tasks:
+    - name: What is my IP?
+      ansible.builtin.uri:
+        url: https://api.ipify.org?format=json
